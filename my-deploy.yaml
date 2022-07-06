@@ -57,7 +57,7 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: web-server
-  minReplicas: 1
+  minReplicas: 2 # лучше пусть будет трата ресурсов, чем та ситуация, где под упал и приложение перестало работать, а наша компания перестанет деньги получать
   maxReplicas: 4
   metrics:
   - type: Resource
